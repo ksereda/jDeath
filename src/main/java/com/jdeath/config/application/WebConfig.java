@@ -10,7 +10,7 @@ import org.springframework.web.servlet.view.JstlView;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan({"com.jdeath.controller", "com.jdeath.config"})
+@ComponentScan({"com.jdeath.controller", "com.jdeath.config", "com.jdeath.model"})
 public class WebConfig extends WebMvcConfigurerAdapter{
     @Bean
     public InternalResourceViewResolver viewResolver() {
