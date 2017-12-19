@@ -8,8 +8,7 @@ import org.springframework.core.env.Environment;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
-import java.sql.Connection;
-import java.sql.Driver;
+
 
 @Configuration
 @PropertySource(value={"classpath:util.properties"})
@@ -24,7 +23,7 @@ public class AppConfig {
         dataSource.setDriverClassName(environment.getProperty("jdbc.mysql.driverClass"));
         dataSource.setUrl(environment.getProperty("jdbc.mysql.url"));
         dataSource.setUsername(environment.getProperty("jdbc.mysql.username"));
-        dataSource.setPassword(environment.getProperty("jdbc.mysql.password"));
+
         return dataSource;
     }
 
