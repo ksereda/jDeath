@@ -11,4 +11,8 @@ public class AppController {
         return "hello";
     }
 
+    @RequestMapping(value="/getRichestUser")
+
+    @RequestMapping(value="/getAccountSum")
+
 }
