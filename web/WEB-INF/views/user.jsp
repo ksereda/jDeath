@@ -4,7 +4,6 @@
     <title>Title</title>
 </head>
 <body>
-<p>hello user</p>
 ${richestUser}
 </body>
 </html>

@@ -6,13 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, 
 	user-scalable=no, maximum-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Delivery main page</title>
-	
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-	
+    <title>jDeath</title>
 	<!-- CSS -->
-	<link href="style.css" rel="stylesheet" type="text/css">
+	<%--<link href="style.css" rel="stylesheet" type="text/css">--%>
+      <link href="/resources/style.css" rel="stylesheet" type="text/css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -22,14 +19,9 @@
     <![endif]-->
   </head>
   <body>
-	<button class="one">Get richest user</button>
+	<a href="http://localhost:8080/getRichestUser">Get richest user</a>
 	<br>
 	<br>
-	<button class="two">Get accounts sum</button>
-	
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.js"></script>
+	<a href="http://localhost:8080/getAccountSum">Get accounts sum</button>
   </body>
 </html>	
