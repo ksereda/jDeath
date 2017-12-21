@@ -2,8 +2,10 @@
 <html>
 <head>
     <title>Title</title>
+    <link href="/resources/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<p>Hello</p>
+<button class="one">Get richest user</button>
+<button class="two">Get accounts sum</button>
 </body>
 </html>

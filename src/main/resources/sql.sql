@@ -1,2 +1,2 @@
 SELECT * FROM jdeath.users;
-SELECT  * FROM jdeath.accounts;
+SELECT * FROM jdeath.accounts;

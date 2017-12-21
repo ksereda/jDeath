@@ -5,4 +5,5 @@ public interface UserRichest {
     * @return  info about richest user
     * */
     String getRichestUser();
+
 }

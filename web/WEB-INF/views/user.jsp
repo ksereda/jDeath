@@ -4,6 +4,7 @@
     <title>Title</title>
 </head>
 <body>
-${richestUser"}
+<p>hello user</p>
+${richestUser}
 </body>
 </html>
