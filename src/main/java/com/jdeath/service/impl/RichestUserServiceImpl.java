@@ -16,4 +16,9 @@ public class RichestUserServiceImpl implements RichestUserService {
     public RichestUser getRichestUserPhoneNumber(String phoneNumber) {
         return richestUserDao.findRichestUserByPhoneNumber(phoneNumber);
     }
+
+    @Override
+    public RichestUser getRichestUser() {
+        return richestUserDao.findRichestUser();
+    }
 }

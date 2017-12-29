@@ -16,20 +16,22 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.jdbc.JdbcDaoImpl;
 
+import java.util.ArrayList;
+
 @Configuration
 @PropertySource(value = {"classpath:util.properties"})
 public class AppConfig {
     @Autowired
     Environment environment;
 
-    @Bean
-    public UserDetailsService userDetailsService() {
-        JdbcDaoImpl jdbcImpl = new JdbcDaoImpl();
-        jdbcImpl.setDataSource(dataSource());
-        jdbcImpl.setUsersByUsernameQuery(environment.getRequiredProperty("usersByQuery"));
-        jdbcImpl.setAuthoritiesByUsernameQuery(environment.getRequiredProperty("rolesByQuery"));
-        return jdbcImpl;
-    }
+//    @Bean
+//    public UserDetailsService userDetailsService() {
+//        JdbcDaoImpl jdbcImpl = new JdbcDaoImpl();
+//        jdbcImpl.setDataSource(dataSource());
+//        jdbcImpl.setUsersByUsernameQuery(environment.getRequiredProperty("usersByQuery"));
+//        jdbcImpl.setAuthoritiesByUsernameQuery(environment.getRequiredProperty("rolesByQuery"));
+//        return jdbcImpl;
+//    }
 
     @Bean
     public DriverManagerDataSource dataSource() {
@@ -45,6 +47,9 @@ public class AppConfig {
     public JdbcTemplate jdbcTemplate() {
         JdbcTemplate jdbcTemplate = new JdbcTemplate();
         jdbcTemplate.setDataSource(dataSource());
+        ArrayList <Document> documents = new ArrayList<>();
+        documents.stream().forEach((document)-> document.getName() );
+        
         return jdbcTemplate;
     }
 

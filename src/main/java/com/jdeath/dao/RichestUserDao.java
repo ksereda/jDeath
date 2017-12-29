@@ -12,4 +12,10 @@ public interface RichestUserDao extends BasicDao<RichestUser>{
         * @return current user
         **/
     RichestUser findRichestUserByPhoneNumber(String phoneNumber);
+
+    /**
+         * Find richest user
+         * @return richest user
+         **/
+    RichestUser findRichestUser();
 }

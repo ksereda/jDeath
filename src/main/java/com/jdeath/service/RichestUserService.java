@@ -12,4 +12,11 @@ public interface RichestUserService {
      **/
 
     RichestUser getRichestUserPhoneNumber(String phoneNumber);
+
+    /**
+         * Receive richest user from DB
+         *
+         * @return richest user
+         **/
+    RichestUser getRichestUser();
 }
