@@ -34,5 +34,4 @@ public class AppController {
         model.addAttribute("accountSum", account.getAccountSum());
         return "account";
     }
-
 }
