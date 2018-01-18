@@ -26,7 +26,7 @@ public class AccountImpl implements Account {
         ResultSet resultSet = null;
         try {
             init();
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/jdeath", "root", "root");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/jdeath2", "root", "root");
             statement = connection.createStatement();
             resultSet = statement.executeQuery(query);
             while (resultSet.next()) {

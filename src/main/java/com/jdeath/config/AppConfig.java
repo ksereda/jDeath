@@ -53,10 +53,10 @@ public class AppConfig {
         return jdbcTemplate;
     }
 
-    @Bean
-    RichestUserDao richestUserDao() {
-        return new RichestUserDaoImpl(RichestUser.class);
-    }
+//    @Bean
+//    RichestUserDao richestUserDao() {
+//        return new RichestUserDaoImpl(RichestUser.class);
+//    }
 
     @Bean
     DocumentDao documentDao() {
