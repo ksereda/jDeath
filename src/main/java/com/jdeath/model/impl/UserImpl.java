@@ -2,7 +2,6 @@ package com.jdeath.model.impl;
 
 import com.jdeath.model.User;
 import org.springframework.stereotype.Component;
-
 import java.sql.*;
 
 @Component

@@ -7,7 +7,6 @@ import javax.persistence.*;
 public class RichestUser {
     @Id
     @Column(name = "userId")
-//    @GeneratedValue(strategy = GenerationType.IDENTITY);
     private long id;
 
     @Column(name = "name")
@@ -15,9 +14,6 @@ public class RichestUser {
 
     @Column(name = "sureName")
     private String sureName;
-
-//    @Column(name = "phone")
-//    private String phoneNumber;
 
     public RichestUser() {
     }
@@ -46,11 +42,4 @@ public class RichestUser {
         this.sureName = sureName;
     }
 
-//    public String getPhoneNumber() {
-//        return phoneNumber;
-//    }
-//
-//    public void setPhoneNumber(String phoneNumber) {
-//        this.phoneNumber = phoneNumber;
-//    }
 }

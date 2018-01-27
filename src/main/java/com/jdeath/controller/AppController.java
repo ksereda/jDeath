@@ -7,8 +7,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import java.sql.SQLException;
-
 @Controller
 public class AppController {
 
@@ -23,13 +21,13 @@ public class AppController {
         return "index";
     }
 
-    @RequestMapping(value="/getRichestUser")
+    @RequestMapping(value = "/getRichestUser")
     public String getRichestUser(Model model) {
         model.addAttribute("richestUser", user.getRichestUser());
         return "user";
     }
 
-    @RequestMapping(value="/getAccountSum")
+    @RequestMapping(value = "/getAccountSum")
     public String getAccountSum(Model model) {
         model.addAttribute("accountSum", account.getAccountSum());
         return "account";
