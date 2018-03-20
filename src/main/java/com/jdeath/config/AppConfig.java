@@ -8,7 +8,6 @@ import org.springframework.core.env.Environment;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
-import java.util.ArrayList;
 
 @Configuration
 @PropertySource(value = {"classpath:util.properties"})
@@ -32,5 +31,4 @@ public class AppConfig {
         jdbcTemplate.setDataSource(dataSource());
         return jdbcTemplate;
     }
-
 }
